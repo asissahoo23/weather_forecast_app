@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api": {
+      "handler": "app.server"
+    }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/\1" }
+  ]
+}
