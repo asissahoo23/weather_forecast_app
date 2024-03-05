@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/app": {
-      "handler": "app.server"
+      "runtime": "vercel-python@0.24.0"
     }
   },
   "rewrites": [
