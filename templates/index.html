@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anta&family=Madimi+One&family=Ojuju&display=swap">
 
     <style>
         body {
-            font-family: 'Oswald', sans-serif;
+            font-family: 'Anta', sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
@@ -81,6 +81,7 @@
             color: #004aad; /* Text color for weather information */
         }
 
+
     </style>
 </head>
 <body>
@@ -90,7 +91,7 @@
     <form method="POST">
         <label for="city">Enter The City Name: </label>
         <input type="text" id="city" name="city" required>
-        <button type="submit">Get Weather</button>
+        <button type="submit">Search</button>
     </form>
     {% if city %}
     <div class="weather-info">
@@ -102,6 +103,7 @@
         <p>Description: {{ weather_data.description }}</p>
         {% endif %}
     </div>
+
     {% endif %}
 </div>
 
